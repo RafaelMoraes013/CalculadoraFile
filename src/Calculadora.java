@@ -12,7 +12,7 @@ public static void main(String[] args) {
 	int op = 0 ;
 	int contador = 0;
 	
-	while (op < 5) {
+	while (op <= 5) {
     	
     	op ++;
 	
@@ -25,7 +25,7 @@ public static void main(String[] args) {
 		
 		System.out.println(" Digite a Operacao: 1 2 3 4");
 	    op = entrada.nextInt();
-	    	    
+	    System.out.println("");	    
 	    	
 	switch (op) {
 	
@@ -46,10 +46,9 @@ public static void main(String[] args) {
 	
 	}	 
 	
-	System.out.printf(" O Resultado do Calculo e %d ", resultado);
+	System.out.printf(" O RESULTADO do Calculo e %d ", resultado);
 	System.out.println("");
-	System.out.println("");
-	System.out.println(" Digite a Operacao Novamente ate 5 VEZES");
+	System.out.println(" ** Digite a Operacao Novamente ate 5 VEZES ** ");
 	System.out.println("");
 	
 			
