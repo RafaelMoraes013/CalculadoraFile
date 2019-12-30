@@ -12,12 +12,10 @@ public static void main(String[] args) {
 	int op = 0 ;
 	int contador = 0;
 	
-	while (op <= 5) {
-    	
-    	op ++;
-	
-    	
-	System.out.println("Digite o primeiro Numero: ");
+	while(op <= 3)   { 
+		
+    		    	
+	System.out.println("Digite o primeiro   Numero: ");
 		numero1 = entrada.nextInt();	
 		
 		System.out.println("Digite o segundo Numero: ");
@@ -43,19 +41,22 @@ public static void main(String[] args) {
 
 	default:
 	throw new IllegalArgumentException(" Opcao Invalida ");
+		 
 	
-	}	 
-	
+	}
 	System.out.printf(" O RESULTADO do Calculo e %d ", resultado);
 	System.out.println("");
-	System.out.println(" ** Digite a Operacao Novamente ate 5 VEZES ** ");
-	System.out.println("");
-	
-			
 	}
+	
+	System.out.println(" ** Digite a Operacao Novamente ate 3  VEZES ** ");
+	System.out.println("");	
+	
+	
+	}
+	
 }
 
-}
+
 
 	
 
