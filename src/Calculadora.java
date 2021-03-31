@@ -11,10 +11,11 @@ public static void main(String[] args) {
 	int resultado = 0;
 	int op = 0 ;
 	int contador = 0;
+	int qtde = 1;
+	boolean info = false;
 	
-	while(op <= 3)   { 
-		
-    		    	
+	do   { 
+		    		    	
 	System.out.println("Digite o primeiro   Numero: ");
 		numero1 = entrada.nextInt();	
 		
@@ -23,6 +24,7 @@ public static void main(String[] args) {
 		
 		System.out.println(" Digite a Operacao: 1 2 3 4");
 	    op = entrada.nextInt();
+	  
 	    System.out.println("");	    
 	    	
 	switch (op) {
@@ -41,22 +43,25 @@ public static void main(String[] args) {
 
 	default:
 	throw new IllegalArgumentException(" Opcao Invalida ");
-		 
-	
+		 	
 	}
+	
+	qtde++;
+	
 	System.out.printf(" O RESULTADO do Calculo e %d ", resultado);
 	System.out.println("");
-	}
+	System.out.println("");
 	
-	System.out.println(" ** Digite a Operacao Novamente ate 3  VEZES ** ");
+	
+	
+	} while(qtde <= 2); {
+	  info= false;
+	  
+	System.out.println("** Operacao Atingiu valor Maximo 2  VEZES ** ");
 	System.out.println("");	
 	
-	
-	}
+		}
+}
 	
 }
-
-
-
-	
 
